@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Nudge</title>
+  <style>
+    :root {
+      --accent: #FF6B35;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fff;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #f0f0f0; --muted: #aaa; --bg: #111; --border: #2a2a2a; }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      line-height: 1.7;
+    }
+    header { margin-bottom: 40px; }
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; }
+    .meta { font-size: 14px; color: var(--muted); margin-top: 8px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 14px; color: var(--muted); }
+    ul { margin: 0 0 14px 20px; color: var(--muted); }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Nudge</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: April 7, 2026 &nbsp;·&nbsp; Last updated: April 7, 2026</p>
+</header>
+
+<p>
+  Nudge ("we", "our", or "us") is committed to protecting your privacy.
+  This Privacy Policy explains what information we collect, how we use it,
+  and the choices you have when you use the Nudge iOS app.
+</p>
+
+<h2>1. Information We Collect</h2>
+<p>
+  Nudge is designed to store your data on your device. We collect the minimum
+  information needed to provide the service:
+</p>
+<ul>
+  <li><strong>Goal and progress data</strong> — titles, notes, action items,
+    and completion history you enter into the app. This is stored locally
+    on your device using Apple's SwiftData framework.</li>
+  <li><strong>Profile information (optional)</strong> — your name, age range,
+    occupation, and interests that you choose to provide to personalize
+    AI-generated nudges. This is stored locally on your device.</li>
+  <li><strong>Nudge messages</strong> — AI-generated motivational messages
+    are created by sending anonymized goal context to our Cloudflare Worker
+    proxy, which forwards the request to Anthropic's Claude API. We do not
+    log or store the content of these requests beyond what Anthropic retains
+    under their own privacy policy.</li>
+  <li><strong>Subscription status</strong> — managed entirely by Apple via
+    StoreKit. We never see or store your payment information.</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<ul>
+  <li>To display your goals, nudges, and progress within the app.</li>
+  <li>To generate personalized AI motivational messages via the Claude API.</li>
+  <li>To send optional push notifications for scheduled nudges.</li>
+  <li>To display a widget on your Home Screen or Lock Screen.</li>
+</ul>
+<p>We do not sell your personal information. We do not use your data for advertising.</p>
+
+<h2>3. Third-Party Services</h2>
+<p>Nudge uses the following third-party services:</p>
+<ul>
+  <li>
+    <strong>Anthropic Claude API</strong> — used to generate nudge messages.
+    Goal context is sent to Anthropic's servers to produce a response.
+    See <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.
+  </li>
+  <li>
+    <strong>Cloudflare Workers</strong> — our proxy server that securely
+    forwards requests to Anthropic without exposing our API key to the app.
+    Cloudflare may collect standard server log data (IP address, timestamp).
+    See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>.
+  </li>
+  <li>
+    <strong>Apple App Store / StoreKit</strong> — handles all subscription
+    purchases and receipts. We never receive your payment details.
+    See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
+  </li>
+</ul>
+
+<h2>4. Data Retention and Deletion</h2>
+<p>
+  All goal and profile data is stored locally on your device. You can delete
+  any or all data at any time by removing goals or uninstalling the app.
+  We do not maintain a server-side copy of your personal data.
+</p>
+
+<h2>5. Push Notifications</h2>
+<p>
+  Nudge may send push notifications to deliver scheduled motivational nudges.
+  You can enable or disable notifications at any time in the app's Settings
+  screen or in iOS Settings → Nudge → Notifications.
+</p>
+
+<h2>6. Children's Privacy</h2>
+<p>
+  Nudge is not directed to children under 13 years of age. We do not
+  knowingly collect personal information from children under 13. If you
+  believe a child has provided us with personal information, please contact
+  us and we will delete it.
+</p>
+
+<h2>7. International Users</h2>
+<p>
+  If you access Nudge from outside the United States, your goal context may
+  be processed by Anthropic and Cloudflare on servers located in the United
+  States. By using the app, you consent to this transfer.
+</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>
+  We may update this Privacy Policy from time to time. We will notify you
+  of material changes by updating the "Last updated" date above. Continued
+  use of the app after changes constitutes your acceptance of the updated policy.
+</p>
+
+<h2>9. Contact Us</h2>
+<p>
+  If you have questions or concerns about this Privacy Policy, please contact us at:
+  <br />
+  <a href="mailto:david.maddux@brightwateradvisory.com">david.maddux@brightwateradvisory.com</a>
+</p>
+
+<footer>
+  <p>
+    <a href="terms.html">Terms of Service</a>
+    &nbsp;·&nbsp;
+    &copy; 2026 Nudge. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
